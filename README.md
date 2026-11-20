@@ -1,43 +1,34 @@
 # PlayCue
 
-**A Windows-first gaming sidekick for Steam.** Open your games quickly. Keep track of what you love. Never lose a game you wanted.
+**Your little gaming sidekick.** Launch games in seconds. Keep your gaming life in order. Never lose a game you wanted.
 
-PlayCue is a lightweight, local-first companion. A persistent desktop Orb opens a compact Quick Panel for installed-game search, launch, recent sessions and WishVault. It complements Steam; it does not replace the Steam client, store, overlay or chat.
+PlayCue is a lightweight, calm, local-first companion for Steam. A small desktop Orb opens a focused Quick Panel for instant game search and launch. WishVault preserves the user's personal wishlist history. Optional social and sync features come later.
 
-- Name: PlayCue
-- Signature feature: WishVault
-- Desktop affordance: PlayCue Orb
-- First platform: Windows 10/11
-- Proposed stack: Tauri 2 + Rust + React + TypeScript + SQLite
-- Repository status: planning/docs kickoff; no executable application implemented yet.
+## Product direction
+- Windows 10/11 first; Steam Deck/Linux on roadmap.
+- Tauri 2 + Rust + React + TypeScript + SQLite.
+- Persistent Orb by default; auto-hide during fullscreen; fully optional.
+- Local-first; no account required for core features.
+- Not a Steam client replacement and not affiliated with Valve.
 
-## Principles
-1. Fast, low-friction launch; do not become another heavyweight launcher.
-2. Steam-friendly: supported launch handoff and read-only local discovery.
-3. Local-first: no sign-in required for core functions.
-4. Evidence/provenance: distinguish observed facts from inferred/unavailable data.
-5. Optional: Orb, autostart, online social and sync can be disabled.
-6. No false Deck compatibility claims.
+## UX identity
+Warm, modern, playful but restrained. Calm by default. Search-to-launch is the primary task. No default social feed, ads, streaks, FOMO or nagging. Accessible scaling, high contrast, reduced motion, keyboard/screen-reader support and user testing are release requirements.
 
-## Feature map
+## Feature plan
+1.0: Orb, Quick Panel, Instant Game Search, Recently Played, favorites, WishVault, Gift Watchlist, Play History, Unified Game Search.
+1.1: Collections, Session Notes, Launch Doctor, optional browser capture.
+2.x: opt-in SquadPulse, Game Night Matcher and optional Cloud Sync.
+3.x: controller-first Deck Mode and Linux packaging.
+Research-gated: optional Millennium plugin; never a core dependency.
 
-| Feature | Phase |
-|---|---|
-| PlayCue Orb, Quick Panel, global shortcut, tray | 1.0 |
-| Instant Game Search, Recently Played, favorites | 1.0 |
-| WishVault snapshots, missing-item history, import/export | 1.0 |
-| Gift Watchlist, Play History, Unified Game Search | 1.0 |
-| Gaming Collections, Game Session Notes, Launch Doctor | 1.1 |
-| Optional browser companion for user-triggered wishlist capture | 1.1/2.x |
-| SquadPulse and Game Night Matcher | 2.x |
-| Optional privacy-first Cloud Sync | 2.x |
-| Steam Deck/Linux Deck Mode | 3.x |
-| Optional Millennium bridge | research gate only |
+## Start here
+- [Product Specification](docs/PRODUCT_SPECIFICATION.md)
+- [2026 UX Research](docs/UX_RESEARCH_2026.md)
+- [Design Principles](docs/DESIGN_PRINCIPLES.md)
+- [Visual Design System](docs/VISUAL_DESIGN_SYSTEM.md)
+- [Screen Specifications](docs/SCREEN_SPECIFICATIONS.md)
+- [UX Validation Plan](docs/UX_VALIDATION_PLAN.md)
+- [OpenCode Master Directive](OPENCODE_PLAYCUE_MASTER_DIRECTIVE.md)
 
-See docs/ for requirements and release gates. Start OpenCode with OPENCODE_PLAYCUE_MASTER_DIRECTIVE.md. AGENTS.md applies to all agents.
-
-## Relationship disclaimer
-PlayCue is independent and is not affiliated with, endorsed by or sponsored by Valve or Steam. Never request Steam passwords, Steam Guard codes or session cookies.
-
-## Current status
-This is a product/engineering documentation commit only. Do not describe planned features as implemented.
+## Repository status
+This repository contains product and engineering specifications; it does not yet contain an executable PlayCue application. Do not describe planned features as implemented.
